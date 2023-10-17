@@ -21,6 +21,7 @@ def train_model(df: pd.DataFrame):
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         csv_file = sys.argv[1]
-        train_model(csv_file)
+        df = pd.read_csv(csv_file)
+        train_model(df)
     else:
         print("Please provide the CSV file path as an argument.")
