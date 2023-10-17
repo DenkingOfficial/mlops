@@ -1,8 +1,8 @@
 stages:
   train:
-    cmd: /home/ml-srv/project/venv/bin/python ./script/train_scripts/train.py ./data/baselines/train.csv
+    cmd: /home/ml-srv/project/venv/bin/python script/train_scripts/train.py data/baselines/train.csv
     deps:
-      - ./script/train_scripts/train.py
-      - ./data/baselines/train.csv
+      - script/train_scripts/train.py
+      - data/baselines/train.csv
     outs:
-      - ./data/models/titanic_catboost_model.cbm
+      - data/models/titanic_catboost_model.cbm

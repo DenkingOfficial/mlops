@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: /home/ml-srv/project/venv/bin/python script/train_scripts/train.py data/baselines/train.csv
+    deps:
+    - path: data/baselines/train.csv
+      hash: md5
+      md5: d7954af5ba754e0e6f27add48629d315
+      size: 20567
+    - path: script/train_scripts/train.py
+      hash: md5
+      md5: 76c3e9484a23f1cff445521f5c159d90
+      size: 1119
+    outs:
+    - path: data/models/titanic_catboost_model.cbm
+      hash: md5
+      md5: 82aae7c0bc52c1cb02767b4796fef39f
+      size: 52140

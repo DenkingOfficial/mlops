@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 
 !*.dvc
+catboost_info/
